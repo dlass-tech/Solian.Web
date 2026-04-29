@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-	<title>Captcha Verification - Dynamic Network</title>
+	<title>人机验证 - Dynamic Network</title>
 </svelte:head>
 
 <div
@@ -32,8 +32,8 @@
 			<Puzzle size={20} />
 		</div>
 		<div>
-			<h1 class="text-xl font-black">Dynamic Network Anti-Robot</h1>
-			<p class="text-xs text-base-content/60">Complete verification to continue</p>
+			<h1 class="text-xl font-black">Dynamic Network 反机器人</h1>
+			<p class="text-xs text-base-content/60">完成验证以继续</p>
 		</div>
 	</div>
 
@@ -42,9 +42,9 @@
 	</div>
 
 	<p class="mt-5 text-xs text-base-content/60">
-		Hosted by
+		支持方程序：
 		<a
-			href="https://github.com/Solsynth/DysonNetwork"
+			href="https://github.com/dlass-tech/DysonNetwork"
 			class="link link-primary"
 			target="_blank"
 			rel="noreferrer">DysonNetwork.Sphere</a
