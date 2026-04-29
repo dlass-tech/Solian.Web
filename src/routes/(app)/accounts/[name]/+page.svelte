@@ -130,7 +130,7 @@
 		if (account?.name) {
 			navigator.share({
 				title: displayName,
-				url: `https://solian.app/@${account?.name}`
+				url: `https://dy.ci/@${account?.name}`
 			});
 		}
 	}

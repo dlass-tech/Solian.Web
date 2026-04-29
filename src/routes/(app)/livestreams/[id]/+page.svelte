@@ -31,7 +31,7 @@
 	function resolveHlsUrl(path?: string | null): string | null {
 		if (!path || !path.trim()) return null;
 		if (path.startsWith('http://') || path.startsWith('https://')) return path;
-		return `https://rt.solian.app${path.startsWith('/') ? '' : '/'}${path}`;
+		return `https://rt.dy.ci${path.startsWith('/') ? '' : '/'}${path}`;
 	}
 
 	function handleBack() {

@@ -3,7 +3,7 @@ main = ".svelte-kit/cloudflare/_worker.js"
 compatibility_date = "2026-02-24"
 compatibility_flags = ["nodejs_compat"]
 routes = [
-  { pattern = "solian.app", zone_name = "solian.app", custom_domain = true },
+  { pattern = "dy.ci", zone_name = "dy.ci", custom_domain = true },
 ]
 
 [assets]
@@ -12,8 +12,8 @@ directory = ".svelte-kit/cloudflare"
 
 [[kv_namespaces]]
 binding = "FAILOVER_CHAT_KV"
-id = "238dc2babe874520baae86d7041ac244"
-preview_id = "68ae7bc348c14d6c8105746b2b7f2c0c"
+id = "0796f7634adf4e94a60237175d2ff86e"
+preview_id = "04eaf97936754f6e835a6eb7363d981a"
 
 [observability]
 [observability.logs]

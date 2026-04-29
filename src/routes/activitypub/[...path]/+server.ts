@@ -1,6 +1,6 @@
 import type { RequestHandler } from './$types';
 
-const API_BASE = 'api.solian.app';
+const API_BASE = 'api.dy.ci';
 
 export const GET: RequestHandler = async ({ request }) => {
 	const url = new URL(request.url);
