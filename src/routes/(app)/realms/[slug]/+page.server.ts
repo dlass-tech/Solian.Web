@@ -88,7 +88,7 @@ export const load: PageServerLoad = async ({ fetch, params, url }) => {
 			seo: {
 				title: realm.name,
 				description: excerptText(
-					realm.description || `Join the ${realm.name} realm on Solar Network.`
+					realm.description || `Join the ${realm.name} realm on Dynamic Network.`
 				),
 				image: getFileUrl(realm.picture?.id)
 			}
@@ -103,7 +103,7 @@ export const load: PageServerLoad = async ({ fetch, params, url }) => {
 			initialTake: TAKE,
 			seo: {
 				title: 'Realm',
-				description: 'Discover communities and posts in Solar Network realms.'
+				description: 'Discover communities and posts in Dynamic Network realms.'
 			}
 		};
 	}

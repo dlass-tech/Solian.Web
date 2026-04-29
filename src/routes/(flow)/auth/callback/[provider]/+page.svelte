@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-	<title>Redirecting - Solar Network</title>
+	<title>Redirecting - Dynamic Network</title>
 </svelte:head>
 
 <div

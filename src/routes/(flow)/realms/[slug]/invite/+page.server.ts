@@ -13,7 +13,7 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 			error: 'Invalid realm slug',
 			seo: {
 				title: 'Realm invite',
-				description: 'Join a realm on Solar Network.',
+				description: 'Join a realm on Dynamic Network.',
 				robots: 'noindex, nofollow'
 			}
 		};
@@ -43,7 +43,7 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 			error: null,
 			seo: {
 				title: `Invite to ${realm.name}`,
-				description: excerptText(realm.description || `Join ${realm.name} on Solar Network.`),
+				description: excerptText(realm.description || `Join ${realm.name} on Dynamic Network.`),
 				image: getFileUrl(realm.picture?.id),
 				robots: 'noindex, nofollow'
 			}
@@ -55,7 +55,7 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 			error: error instanceof Error ? error.message : 'Failed to load realm',
 			seo: {
 				title: 'Realm invite',
-				description: 'Join a realm on Solar Network.',
+				description: 'Join a realm on Dynamic Network.',
 				robots: 'noindex, nofollow'
 			}
 		};

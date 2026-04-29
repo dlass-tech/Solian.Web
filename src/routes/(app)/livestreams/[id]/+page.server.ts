@@ -32,7 +32,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 			seo: {
 				title: livestream.title || 'Livestream',
 				description: excerptText(
-					livestream.description || 'Watch live content on Solar Network livestreams.'
+					livestream.description || 'Watch live content on Dynamic Network livestreams.'
 				),
 				type: 'article',
 				image: getFileUrl(livestream.thumbnail?.id ?? livestream.thumbnailId)
@@ -44,7 +44,7 @@ export const load: PageServerLoad = async ({ params, fetch }) => {
 			error: error instanceof Error ? error.message : 'Failed to load livestream.',
 			seo: {
 				title: 'Livestream',
-				description: 'Watch live and recorded streams on Solar Network.'
+				description: 'Watch live and recorded streams on Dynamic Network.'
 			}
 		};
 	}

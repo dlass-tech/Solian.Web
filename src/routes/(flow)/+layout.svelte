@@ -47,7 +47,7 @@
 		<!-- Footer -->
 		<footer class="mt-8 text-center">
 			<p class="text-sm text-base-content/60">
-				© {new Date().getFullYear()} Solar Network
+				© {new Date().getFullYear()} Dynamic Network
 			</p>
 			<div class="mt-2 flex justify-center gap-4 text-xs text-base-content/50">
 				<a href="https://solsynth.dev/terms" class="hover:underline">Terms</a>

@@ -56,7 +56,7 @@
 </script>
 
 <svelte:head>
-	<title>Magic Spell - Solar Network</title>
+	<title>Magic Spell - Dynamic Network</title>
 </svelte:head>
 
 <div class="w-full max-w-md">

@@ -155,7 +155,7 @@ export const load: PageServerLoad = async ({ fetch, params, url }): Promise<Page
 			initialTake: TAKE,
 			seo: {
 				title: 'Account',
-				description: 'Browse account profiles on Solar Network.'
+				description: 'Browse account profiles on Dynamic Network.'
 			}
 		};
 	}

@@ -60,7 +60,7 @@
 </script>
 
 <svelte:head>
-	<title>Authorize Application - Solar Network</title>
+	<title>Authorize Application - Dynamic Network</title>
 </svelte:head>
 
 {#if backgroundUrl}
@@ -95,7 +95,7 @@
 					{clientInfo?.clientName || 'Unknown Application'}
 				</h1>
 				<p class="truncate text-sm text-base-content/70">
-					wants access to your Solar Network account
+					wants access to your Dynamic Network account
 				</p>
 			</div>
 		</div>

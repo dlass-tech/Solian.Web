@@ -1,7 +1,7 @@
-export const SITE_NAME = 'Solar Network';
+export const SITE_NAME = 'Dyanmic Network';
 export const DEFAULT_SEO_TITLE = SITE_NAME;
 export const DEFAULT_SEO_DESCRIPTION =
-	'Explore posts, realms, publishers, and livestreams on Solar Network.';
+	'Explore posts, realms, publishers, and livestreams on Dynamic Network.';
 export const DEFAULT_SEO_IMAGE_PATH = '/og-default.svg';
 
 export interface SeoData {

@@ -29,8 +29,8 @@
 <div class="mx-auto max-w-2xl">
 	<div class="flex items-center justify-between gap-3 px-4 pt-4">
 		<div>
-			<h1 class="text-xl font-bold">Livestreams</h1>
-			<p class="text-sm text-base-content/60">Discover streams that are live right now.</p>
+			<h1 class="text-xl font-bold">直播</h1>
+			<p class="text-sm text-base-content/60">寻找正在进行的直播</p>
 		</div>
 		<span class="badge gap-2 badge-outline border-error/40 bg-error/5 text-error">
 			<Radio class="h-3.5 w-3.5" />
@@ -43,13 +43,13 @@
 			<div class="mx-auto alert max-w-md alert-error">
 				<AlertTriangle class="h-5 w-5" />
 				<div>
-					<p class="font-semibold">Error loading livestreams</p>
+					<p class="font-semibold">加载直播错误QmQ!</p>
 					<p class="text-sm">{data.error}</p>
 				</div>
 			</div>
 			<a href="/livestreams" class="btn mt-4 btn-primary">
 				<RefreshCw class="h-4 w-4" />
-				Retry
+				重试
 			</a>
 		</div>
 	{:else if livestreams.length === 0}
@@ -58,14 +58,14 @@
 				<div class="rounded-full bg-base-200 p-4">
 					<TvMinimal class="h-8 w-8 text-base-content/60" />
 				</div>
-				<h2 class="text-xl font-bold">No active livestreams</h2>
+				<h2 class="text-xl font-bold">没有进行的直播</h2>
 				<p class="max-w-lg text-base-content/60">
-					There are no live streams right now. Explore more content and check back soon.
+					这里没有直播，先探索其他内容等一下再回来吧！
 				</p>
 				<div class="mt-2 card-actions">
 					<a href="/" class="btn btn-primary">
 						<Compass class="h-4 w-4" />
-						Explore content
+						探索更多
 					</a>
 				</div>
 			</div>

@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-	<title>Sign-in Complete - Solar Network</title>
+	<title>Sign-in Complete - Dynamic Network</title>
 </svelte:head>
 
 <div class="w-full max-w-md">

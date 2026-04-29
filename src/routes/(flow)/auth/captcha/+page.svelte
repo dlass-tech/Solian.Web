@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-	<title>Captcha Verification - Solar Network</title>
+	<title>Captcha Verification - Dynamic Network</title>
 </svelte:head>
 
 <div
@@ -32,7 +32,7 @@
 			<Puzzle size={20} />
 		</div>
 		<div>
-			<h1 class="text-xl font-black">Solar Network Anti-Robot</h1>
+			<h1 class="text-xl font-black">Dynamic Network Anti-Robot</h1>
 			<p class="text-xs text-base-content/60">Complete verification to continue</p>
 		</div>
 	</div>

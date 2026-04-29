@@ -7,8 +7,8 @@
 	import ComposeDialog from './ComposeDialog.svelte';
 
 	const navItems = [
-		{ icon: Compass, label: 'Explore', href: '/' },
-		{ icon: Radio, label: 'Livestreams', href: '/livestreams' }
+		{ icon: Compass, label: '探索', href: '/' },
+		{ icon: Radio, label: '直播', href: '/livestreams' }
 	];
 
 	function handleLogout() {
@@ -54,7 +54,7 @@
 			onclick={() => (document.getElementById('compose-dialog') as HTMLDialogElement)?.showModal()}
 		>
 			<Plus class="h-6 w-6" />
-			<span>New Post</span>
+			<span>发表帖子</span>
 		</button>
 	</div>
 
@@ -87,20 +87,20 @@
 					<li>
 						<a href="/pricing">
 							<CreditCard size={18} />
-							Membership
+							关系
 						</a>
 					</li>
 					<li class="my-1 border-t border-base-300"></li>
 					<li>
 						<a href="/me">
 							<User size={18} />
-							Profile
+							账户
 						</a>
 					</li>
 					<li>
 						<button onclick={handleLogout}>
 							<LogOut size={18} />
-							Logout
+							登出
 						</button>
 					</li>
 				</ul>
@@ -116,8 +116,8 @@
 					</div>
 				</div>
 				<div class="text-left">
-					<div class="text-sm font-semibold">Sign In</div>
-					<div class="text-xs text-base-content/50">Join the community</div>
+					<div class="text-sm font-semibold">登录</div>
+					<div class="text-xs text-base-content/50">加入社区</div>
 				</div>
 			</a>
 		{/if}

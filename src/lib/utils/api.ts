@@ -1,4 +1,4 @@
-// API client for Solar Network
+// API client for Dynamic Network
 import type { SnAuthChallenge, SnAuthFactor, SnAuthToken, User } from '$lib/types/auth';
 import { snakeToCamel } from './case';
 

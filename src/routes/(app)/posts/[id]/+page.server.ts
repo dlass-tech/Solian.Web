@@ -34,7 +34,7 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 		const imageAttachment = post.attachments.find((item) => item.mime_type.startsWith('image/'));
 		const publisherName = post.publisher.nick || post.publisher.name;
 		const description = excerptText(
-			post.description || post.title || post.content || `${publisherName}'s post on Solar Network.`
+			post.description || post.title || post.content || `${publisherName}'s post on Dynamic Network.`
 		);
 
 		return {
@@ -56,7 +56,7 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 			error: error instanceof Error ? error.message : 'Failed to load post',
 			seo: {
 				title: 'Post',
-				description: 'Read posts and community conversations on Solar Network.'
+				description: 'Read posts and community conversations on Dynamic Network.'
 			}
 		};
 	}

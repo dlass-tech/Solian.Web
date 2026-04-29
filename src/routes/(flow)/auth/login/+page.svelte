@@ -65,7 +65,7 @@
 </script>
 
 <svelte:head>
-	<title>Login - Solar Network</title>
+	<title>登录 - Dynamic Network</title>
 </svelte:head>
 
 <div class="w-full max-w-4xl rounded-3xl shadow-2xl backdrop-blur-xl">
@@ -74,15 +74,15 @@
 			class="flex flex-col justify-between rounded-t-3xl bg-base-100/50 p-6 backdrop-blur-2xl md:rounded-l-3xl md:rounded-tr-none md:p-8"
 		>
 			<div>
-				<img src={favicon} alt="Solar Network" class="h-12 w-12 rounded-full" />
-				<h1 class="mt-2 text-3xl leading-tight font-black">Sign in</h1>
+				<img src={favicon} alt="Dynamic Network" class="h-12 w-12 rounded-full" />
+				<h1 class="mt-2 text-3xl leading-tight font-black">登录</h1>
 				<p class="mt-3 max-w-sm text-sm text-base-content/70">
-					Use your Solarpass account to login the Floating Island.
+					使用你的Dynamic Network登录浮岛
 				</p>
 			</div>
 			<div class="mt-6 text-sm">
-				No account?
-				<a class="link font-semibold link-primary" href="/auth/create-account">Create one</a>
+				没有账号?
+				<a class="link font-semibold link-primary" href="/auth/create-account">创建账号</a>
 			</div>
 		</section>
 

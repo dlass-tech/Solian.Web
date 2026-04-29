@@ -112,7 +112,7 @@
 </script>
 
 <svelte:head>
-	<title>Create Account - Solar Network</title>
+	<title>创建账户 - Dynamic Network</title>
 </svelte:head>
 
 <div class="w-full max-w-4xl rounded-3xl shadow-2xl backdrop-blur-xl">
@@ -120,13 +120,13 @@
 		<section
 			class="flex flex-col justify-start gap-2 rounded-t-3xl bg-base-100/50 p-6 backdrop-blur-2xl md:rounded-l-3xl md:rounded-tr-none md:p-8"
 		>
-			<img src={favicon} alt="Solar Network" class="h-12 w-12 rounded-full" />
+			<img src={favicon} alt="Dynamic Network" class="h-12 w-12 rounded-full" />
 			<p class="text-xs font-semibold tracking-[0.2em] text-base-content/70 uppercase">
-				Step {stepIndex} / 5
+				步骤 {stepIndex} / 5
 			</p>
-			<h1 class="text-3xl leading-tight font-black">Create your account</h1>
+			<h1 class="text-3xl leading-tight font-black">创建账户</h1>
 			<p class="text-sm text-base-content/70">
-				Fast setup with username, email, password, captcha, and terms confirmation.
+				设置名字、密码通过验证码和真人验证
 			</p>
 		</section>
 
@@ -134,17 +134,17 @@
 			{#if stage === 'username-nick'}
 				<div class="space-y-4">
 					<fieldset class="fieldset">
-						<legend class="fieldset-legend">Username</legend>
+						<legend class="fieldset-legend">用户名</legend>
 						<input type="text" class="input w-full" bind:value={name} />
 					</fieldset>
 					<fieldset class="fieldset">
-						<legend class="fieldset-legend">Nickname</legend>
+						<legend class="fieldset-legend">昵称（显示用）</legend>
 						<input type="text" class="input w-full" bind:value={nick} />
 					</fieldset>
 				</div>
 			{:else if stage === 'email'}
 				<fieldset class="fieldset">
-					<legend class="fieldset-legend">Email</legend>
+					<legend class="fieldset-legend">邮箱</legend>
 					<input type="email" class="input w-full" bind:value={email} />
 				</fieldset>
 			{:else if stage === 'password'}
@@ -159,10 +159,10 @@
 				</fieldset>
 			{:else if stage === 'captcha'}
 				<div class="space-y-3">
-					<p class="text-center text-sm text-base-content/70">Complete captcha to continue.</p>
+					<p class="text-center text-sm text-base-content/70">完成人机验证以继续。</p>
 					<CaptchaWidget onVerified={onCaptchaVerified} />
 					{#if captchaToken}
-						<p class="text-xs text-success">Captcha verified successfully.</p>
+						<p class="text-xs text-success">验证成功</p>
 					{/if}
 				</div>
 			{:else if stage === 'terms'}
@@ -170,25 +170,25 @@
 					class="rounded-xl border border-base-300 bg-base-200/60 p-4 text-sm text-base-content/80"
 				>
 					<ul class="list-disc space-y-1 pl-5">
-						<li>One account per person under Solar Network terms.</li>
-						<li>Activate your account via email before full access.</li>
-						<li>Support: lily@solsynth.dev</li>
+						<li>账户创建ing...</li>
+						<li>激活邮箱后使用完整功能</li>
+						<li>Support: sn@dy.ci</li>
 					</ul>
 				</div>
 			{/if}
 
 			<div class="mt-6 flex items-center justify-between">
 				{#if stage === 'username-nick'}
-					<a href="/auth/login" class="btn btn-ghost btn-sm">Login</a>
+					<a href="/auth/login" class="btn btn-ghost btn-sm">登录</a>
 				{:else}
 					<button class="btn btn-ghost btn-sm" onclick={back} disabled={isLoading}>
-						<ArrowLeft size={16} /> Back
+						<ArrowLeft size={16} /> 返回
 					</button>
 				{/if}
 
 				{#if stage !== 'terms'}
 					<button class="btn btn-primary" onclick={next} disabled={isLoading}>
-						Next <ArrowRight size={16} />
+						继续 <ArrowRight size={16} />
 					</button>
 				{:else}
 					<button class="btn btn-primary" onclick={submit} disabled={isLoading}>
@@ -197,7 +197,7 @@
 						{:else}
 							<CheckCircle2 size={16} />
 						{/if}
-						Create Account
+						创建账户
 					</button>
 				{/if}
 			</div>

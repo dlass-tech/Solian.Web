@@ -102,7 +102,7 @@ export const load: PageServerLoad = async ({ fetch, params, url }) => {
 			initialTake: TAKE,
 			seo: {
 				title: 'Publisher',
-				description: 'Browse publisher profiles and posts on Solar Network.'
+				description: 'Browse publisher profiles and posts on Dynamic Network.'
 			}
 		};
 	}

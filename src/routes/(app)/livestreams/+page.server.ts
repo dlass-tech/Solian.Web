@@ -60,7 +60,7 @@ export const load: PageServerLoad = async ({ fetch }) => {
 			error: error instanceof Error ? error.message : 'Failed to load livestreams.',
 			seo: {
 				title: 'Livestreams',
-				description: 'Browse active livestreams on Solar Network.'
+				description: 'Browse active livestreams on Dynamic Network.'
 			}
 		};
 	}

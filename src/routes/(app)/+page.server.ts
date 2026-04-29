@@ -17,7 +17,7 @@ export const load: PageServerLoad = async ({ fetch }) => {
 			error: null,
 			seo: {
 				title: 'Explore',
-				description: 'Discover fresh posts and updates across Solar Network.'
+				description: 'Discover fresh posts and updates across Dynamic Network.'
 			}
 		};
 	} catch (error) {
@@ -27,7 +27,7 @@ export const load: PageServerLoad = async ({ fetch }) => {
 			error: error instanceof Error ? error.message : 'Failed to load posts',
 			seo: {
 				title: 'Explore',
-				description: 'Browse posts and updates from the Solar Network community.'
+				description: 'Browse posts and updates from the Dynamic Network community.'
 			}
 		};
 	}

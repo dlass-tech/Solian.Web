@@ -61,7 +61,7 @@
 
 		<!-- Legal Info Footer - Mobile only -->
 		<div class="mt-8 border-base-300 px-4 py-6 text-center lg:hidden">
-			<p class="text-sm text-base-content/50">© {new Date().getFullYear()} Solar Network</p>
+			<p class="text-sm text-base-content/50">© {new Date().getFullYear()} Dynamic Network</p>
 		</div>
 	</div>
 </div>

@@ -48,7 +48,7 @@
 </script>
 
 <svelte:head>
-	<title>Order Payment - Solar Network</title>
+	<title>Order Payment - Dynamic Network</title>
 </svelte:head>
 
 <div class="w-full max-w-md">

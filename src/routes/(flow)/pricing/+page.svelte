@@ -143,7 +143,7 @@
 					<div class="max-w-3xl">
 						<h1 class="text-3xl font-black tracking-tight text-base-content">Membership tiers</h1>
 						<p class="mt-2 text-sm leading-6 text-base-content/70 md:text-base">
-							Pick the Stellar plan that matches how you use Solar Network. Every tier improves
+							Pick the Stellar plan that matches how you use Dynamic Network. Every tier improves
 							storage, progression, and account capabilities without changing the core experience.
 						</p>
 					</div>
@@ -211,7 +211,7 @@
 							</p>
 						</div>
 						<div class="text-sm text-base-content/55">
-							All tiers include the base Solar Network experience.
+							All tiers include the base Dynamic Network experience.
 						</div>
 					</div>
 

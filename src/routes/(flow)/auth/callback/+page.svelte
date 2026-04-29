@@ -64,7 +64,7 @@
 </script>
 
 <svelte:head>
-	<title>Authenticating... - Solar Network</title>
+	<title>Authenticating... - Dynamic Network</title>
 </svelte:head>
 
 <div class="w-full max-w-md">
