@@ -56,7 +56,7 @@
 </script>
 
 <svelte:head>
-	<title>Magic Spell - Dynamic Network</title>
+	<title>魔术链接 - Dynamic Network</title>
 </svelte:head>
 
 <div class="w-full max-w-md">
@@ -67,7 +67,7 @@
 					<Wand2 class="text-warning" size={22} />
 				</div>
 				<div>
-					<h1 class="text-xl font-bold">Magic Spell</h1>
+					<h1 class="text-xl font-bold">魔术链接</h1>
 					<p class="text-sm text-base-content/60">
 						{spell ? (spellTypes[spell.type] ?? 'Unknown Spell') : 'Loading...'}
 					</p>
@@ -76,7 +76,7 @@
 
 			{#if done}
 				<div class="alert alert-success">
-					<span>Spell applied successfully. You can close this tab now.</span>
+					<span>激活成功，你可以关掉这个页面了。</span>
 				</div>
 			{:else if error}
 				<div class="alert alert-error">
@@ -91,7 +91,7 @@
 					<div class="flex items-center gap-3">
 						<User size={18} class="text-base-content/60" />
 						<div>
-							<p class="text-xs tracking-wide text-base-content/60 uppercase">Account</p>
+							<p class="text-xs tracking-wide text-base-content/60 uppercase">账户</p>
 							<p class="font-semibold">@{spell.account.name}</p>
 						</div>
 					</div>
@@ -99,7 +99,7 @@
 					<div class="flex items-center gap-3">
 						<Clock size={18} class="text-base-content/60" />
 						<div>
-							<p class="text-xs tracking-wide text-base-content/60 uppercase">Available at</p>
+							<p class="text-xs tracking-wide text-base-content/60 uppercase">可用于</p>
 							<p class="font-semibold">
 								{new Date(spell.createdAt ?? spell.affectedAt).toLocaleString()}
 							</p>
@@ -110,7 +110,7 @@
 						<div class="flex items-center gap-3">
 							<Calendar size={18} class="text-base-content/60" />
 							<div>
-								<p class="text-xs tracking-wide text-base-content/60 uppercase">Expires</p>
+								<p class="text-xs tracking-wide text-base-content/60 uppercase">过期</p>
 								<p class="font-semibold">{new Date(spell.expiredAt).toLocaleString()}</p>
 							</div>
 						</div>
@@ -122,7 +122,7 @@
 						<input
 							type="password"
 							class="input-bordered input w-full"
-							placeholder="New password"
+							placeholder="新密码"
 							bind:value={newPassword}
 						/>
 					{/if}
@@ -136,7 +136,7 @@
 						{:else}
 							<Check size={16} />
 						{/if}
-						Apply Spell
+						激活账户
 					</button>
 				</div>
 			{/if}
